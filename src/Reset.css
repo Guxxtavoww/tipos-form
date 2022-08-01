@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+#root {
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.app_grid {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+}
